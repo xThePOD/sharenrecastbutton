@@ -38,15 +38,15 @@ app.frame('/frame2', (c) => {
 
 app.frame('/share', (c) => {
   // Prewritten cast message
-  const prewrittenMessage = "Just got my results from [Your Frame's Name]! Check it out: https://your-frame-url.com";
+  const prewrittenMessage = "Just got my results from [Your Frame's Name]! Check it out: https://sharenrecastbutton.vercel.app/api";
 
   // Logic to share the prewritten message
   console.log("Casting the following message:", prewrittenMessage);
-  window.open(`https://your-casting-platform-url.com?message=${encodeURIComponent(prewrittenMessage)}`, '_blank');
+  window.open(`https://warcast.com?message=${encodeURIComponent(prewrittenMessage)}`, '_blank');
 
   // Return a response with a confirmation image and back button
   return c.res({
-    image: 'https://your-confirmation-image-url.com/your-confirmation-image.png',
+    image: 'https://amethyst-able-sawfish-36.mypinata.cloud/ipfs/QmPcsoDUUPCJB7QN9As1LRaioogZ9oWaoLHhcBDX2ruPku',
     intents: [
       <Button action='/frame2'>Back</Button>,
     ],
